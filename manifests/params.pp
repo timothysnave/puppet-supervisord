@@ -96,6 +96,9 @@ class supervisord::params {
   $umask                   = '022'
   $manage_config           = true
   $config_include          = '/etc/supervisor.d'
+  $config_include_owner    = 'root'
+  $config_include_group    = 'root'
+  $config_include_mode     = '0755'
   $config_file             = '/etc/supervisord.conf'
   $config_file_mode        = '0644'
   $setuptools_url          = 'https://bootstrap.pypa.io/ez_setup.py'
